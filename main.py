@@ -53,4 +53,5 @@ def main():
     displayResults(Usage, Cost)
     print("Program ending.")
 
-main()
+if __name__ == "__main__":
+    main()
