@@ -9,7 +9,7 @@ class TIMESTAMP:
     price = 0.0
 
 def readfile(PFilename, PRows):
-    print('Reading file "{}"'.format(PFilename))
+    print('Reading file "{}".'.format(PFilename))
     with open(PFilename) as File:
         File.readline()
         for Line in File:
