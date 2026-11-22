@@ -21,6 +21,7 @@ def readfile(PFilename, PRows):
     return None
 
 def analyseTimestamps(Timestamps, PRows):
+    print("Analysing timestamps.")
     for row in PRows:
         Timestamp = TIMESTAMP()
         Timestamp.weekday = row[0]
@@ -45,6 +46,7 @@ def displayResults(Usage, Cost):
     print("### Electricity consumption summary ###")
 
 def main():
+    print("Program starting.")
     filename = input("Insert filename: ")
     PRows = []
     readfile(filename, PRows)
